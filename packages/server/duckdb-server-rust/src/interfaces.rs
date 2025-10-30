@@ -27,7 +27,6 @@ pub struct QueryParams {
     pub query_type: Option<Command>,
     pub persist: Option<bool>,
     pub sql: Option<String>,
-    pub name: Option<String>,
 }
 
 pub enum QueryResponse {
