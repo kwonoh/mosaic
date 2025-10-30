@@ -39,7 +39,7 @@ export { cast, float32, float64, int32 } from './functions/cast.js';
 export { collate } from './functions/collate.js';
 export { column } from './functions/column.js';
 export { cte } from './functions/cte.js';
-export { dateBin, dateMonth, dateMonthDay, dateDay, epoch_ms } from './functions/datetime.js';
+export { dateBin, dateMonth, dateMonthDay, dateDay, epoch_ms, timezone } from './functions/datetime.js';
 export { from } from './functions/from.js';
 export { days, hours, interval, microseconds, minutes, milliseconds, months, seconds, years } from './functions/interval.js';
 export { asof_join, cross_join, join, positional_join } from './functions/join.js';
@@ -69,11 +69,11 @@ export { loadCSV, loadJSON, loadObjects, loadParquet, loadSpatial } from './load
 
 export { bin1d } from './transforms/bin-1d.js';
 export { bin2d } from './transforms/bin-2d.js';
-export { binDate } from './transforms/bin-date.js';
-export { binHistogram } from './transforms/bin-histogram.js';
+export { binDate, type BinDateOptions } from './transforms/bin-date.js';
+export { binHistogram, type BinHistogramOptions } from './transforms/bin-histogram.js';
 export { binLinear1d } from './transforms/bin-linear-1d.js';
 export { binLinear2d } from './transforms/bin-linear-2d.js';
-export { filterQuery } from './transforms/filter-query.js';
+export { filterQuery, filterPushdown } from './transforms/filter-query.js';
 export { lineDensity } from './transforms/line-density.js';
 export { m4 } from './transforms/m4.js';
 export { scaleTransform, type Scale, type ScaleDomain, type ScaleOptions, type ScaleTransform, type ScaleType } from './transforms/scales.js';
